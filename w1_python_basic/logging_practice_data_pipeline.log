@@ -1,0 +1,4 @@
+2026-02-27 21:22:24,377 - INFO - [w1_logging.py:24] - 데이터 처리 파이프라인 시작.
+2026-02-27 21:22:24,387 - WARNING - [w1_logging.py:34] - [WARNING] 데이터가 숫자가 아닙니다: abc, 파일: sample.txt
+2026-02-27 21:22:24,387 - WARNING - [w1_logging.py:34] - [WARNING] 데이터가 숫자가 아닙니다: 집, 파일: sample.txt
+2026-02-27 21:22:24,387 - INFO - [w1_logging.py:37] - 데이터 처리 완료.
