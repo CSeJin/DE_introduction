@@ -8,5 +8,8 @@ data = {
 }
 
 df = pd.DataFrame(data)
-# 날짜 컬럼을 진짜 '날짜 타입'으로 변경 (중요!)
 df['date'] = pd.to_datetime(df['date'])
+
+# 조회수(hits)가 50회 이상이고 작성자(author)가 'unknown'이 아닌 기사들의 제목(title)과 날짜(date)만 추출
+filtered_data = df.loc[(df.hits>=50) & (df.author != 'unknown'), ['title', 'date']]
+print(filtered_data)
