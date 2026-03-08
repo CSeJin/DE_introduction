@@ -24,7 +24,7 @@ df = pd.DataFrame({
 # 공백 제거
 df['news_title'] = df['news_title'].str.strip()
 # 중복 제거
-df['news_title'] = df['news_title'].drop_duplicates()
+df = df.drop_duplicates()
 # 결측치 채우기
 df['author_name'] = df['author_name'].fillna('익명')
 # 불량 데이터 삭제
