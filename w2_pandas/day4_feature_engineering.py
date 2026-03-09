@@ -39,3 +39,16 @@ df['day_of_week'] = df['reg_date'].dt.day_name()
 df['is_argent'] = df['title'].str.contains('신기술|긴급')
 
 print(df)
+
+###############
+# 문제 1: 등급별 평균 조회수를 구하라.
+grade_avg = df.groupby('grade')['view_count'].mean()
+print(grade_avg)
+
+# 문제 2: 요일별 게시된 기사의 개수와 총 조회수를 구하라.
+weekday_report = df.groupby('day_of_week')['view_count'].agg(['count','sum'])
+print(weekday_report)
+
+# 문제 3: 요일별 인기 지표를 생성하라.
+weekly_popularity_report = df.groupby('day_of_week')['view_count'].agg(['mean', 'max'])
+print(weekly_popularity_report)
