@@ -1,3 +1,5 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.defaultInterpreterPath": "C:\\Users\\hamon\\miniconda3\\envs\\de\\python.exe",
+    "python.terminal.activateEnvInCurrentTerminal": true
 }
